@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>114/10-115/9 來台旅客觀光統計與新南向市場深度分析報告</title>
+    <!-- Highcharts 核心與模組 -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+            background: var(--highcharts-background-color, #f4f6f9);
+            color: var(--highcharts-neutral-color-100, #1f2937);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container-wrapper {
+            max-width: 1000px;
+            margin: 2em auto;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            padding: 40px;
+        }
+
+        .section-block {
+            margin-bottom: 50px;
+        }
+
+        .section-block:not(:last-child) {
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 50px;
+        }
+
+        .highcharts-figure {
+            margin: 0 auto 1.5em auto;
+        }
+
+        .highcharts-description {
+            background: light-dark(#f2f6f2, #323232);
+            border-radius: 0 6px 6px 0;
+            border-left: 4px solid light-dark(#1d6aff, #60a5fa);
+            font-size: 0.9rem;
+            font-style: italic;
+            padding: 12px 18px;
+            margin: 1.5em 0 1em 0;
+            color: light-dark(#4b5563, #d1d5db);
+        }
+
+        /* 分析文稿樣式 */
+        .analysis-section h2 {
+            font-size: 1.4rem;
+            color: #1e3a8a;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .analysis-section h3 {
+            font-size: 1.1rem;
+            color: #374151;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .analysis-section p {
+            margin-bottom: 12px;
+            color: #4b5563;
+            text-align: justify;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .page-header h1 {
+            font-size: 1.8rem;
+            color: #111827;
+            margin-bottom: 8px;
+        }
+
+        .page-header p {
+            color: #6b7280;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-wrapper">
+        <div class="page-header">
+            <h1>114/10 - 115/9 來台旅客觀光統計與市場分析綜合報告</h1>
+            <p>統計期間：西元 2025年10月 - 2026年9月 ｜ 資料來源：交通部觀光署</p>
+        </div>
+
+        <!-- 第一部分：整體來台旅客圓餅圖 -->
+        <div class="section-block">
+            <figure class="highcharts-figure">
+                <div id="pie-container" style="min-width: 310px; height: 450px; margin: 0 auto"></div>
+                <p class="highcharts-description">
+                    圖一：呈現 114年10月 至 115年9月（西元 2025年10月 - 2026年9月）來台旅客按主要國籍/地區分佈概況。
+                    統計顯示亞洲地區旅客仍為台灣入境旅遊市場之絕對主力，美洲與歐洲旅客亦佔有一定的國際市場份額。
+                </p>
+            </figure>
+
+            <div class="analysis-section">
+                <h2>📊 來台旅客總體市場結構與趨勢分析</h2>
+                <p>
+                    觀光署最新統計數據顯示，自 114 年 10 月至 115 年 9 月（西元 2025 年 10 月至 2026 年 9 月）整年度期間，來台旅客總數達到 **6,900,434 人次**。整體國際客源結構呈現出以「近程亞洲市場」為核心，遠程歐美及大洋洲市場穩健回溫的多元化發展格局。
+                </p>
+
+                <h3>1. 亞洲市場主導地位穩固，鄰近國家為核心動能</h3>
+                <p>
+                    在所有入境客源中，**亞洲地區（Asia）** 旅客總計達到 **5,280,306 人次**，高居各區域之冠，佔整體來台旅客的絕對多數（約 **76.52%**）。這反映出台灣在地理區位、航班航網綿密及文化共鳴上，對亞洲鄰近國家與地區依然具備強大的觀光吸引力與便捷性。
+                </p>
+
+                <h3>2. 長程市場表現穩健，美洲與歐洲客源持續復甦</h3>
+                <p>
+                    在長程市場方面，**美洲地區（Americas）** 貢獻了 **959,459 人次**（佔約 **13.90%**），是除了亞洲之外最大且最具貢獻的客源板塊；而 **歐洲地區（Europe）** 亦有 **489,079 人次**（佔約 **7.09%**）的穩健表現。這顯示出台灣在推動商務差旅、文化深度旅遊及環保生態旅遊的國際推廣上已見成效。
+                </p>
+
+                <h3>3. 大洋洲與其他地區之潛力展望</h3>
+                <p>
+                    此外，**大洋洲地區（Oceania）** 錄得 **156,637 人次**（佔約 **2.27%**），非洲地區與其他未列明項目則佔小部分比例。未來在觀光行銷策略上，可針對不同客源國的偏好進行精準分眾行銷，進一步提升國際旅客的停留天數與整體觀光產值。
+                </p>
+            </div>
+        </div>
+
+        <!-- 第二部分：新南向東協10國長條圖 -->
+        <div class="section-block" style="border-bottom: none; padding-bottom: 0;">
+            <figure class="highcharts-figure">
+                <div id="bar-container" style="min-width: 310px; height: 500px; margin: 0 auto"></div>
+                <p class="highcharts-description">
+                    圖二：呈現 114年10月 至 115年9月（西元 2025年10月 - 2026年9月）新南向東協 10 國來台旅客按國籍別統計數據。
+                    透過橫向長條圖可以清晰比較各國訪台旅次規模與排行，精準掌握東協各市場在台灣入境觀光版圖中的實質貢獻。
+                </p>
+            </figure>
+
+            <div class="analysis-section">
+                <h2>📊 新南向東協10國來台旅客市場結構與趨勢分析</h2>
+                <p>
+                    在整體亞洲客源中，新南向政策目標之東協十國來台旅客總數達到 **2,698,569 人次**。在區域經貿交流深化、航班復甦及觀光推廣雙向並進下，東協市場已確立為支撐台灣國際觀光客源的關鍵支柱。
+                </p>
+
+                <h3>1. 菲律賓躍居東協訪台之首，越南與泰國緊追在後</h3>
+                <p>
+                    在個別國家表現方面，**菲律賓**以 **741,033 人次** 居東協十國之冠，顯示商務差旅、移工探親及旅遊團體的強勁需求；**越南**（465,626 人次）與 **泰國**（408,149 人次）分居二、三名。越南受惠於經貿鏈結與團體旅遊復甦，表現亮眼；泰國則在持續推動的免簽政策與自由行風潮帶動下，維持極高的市場熱度。
+                </p>
+
+                <h3>2. 馬來西亞與新加坡展現高消費力與穩定客源</h3>
+                <p>
+                    **馬來西亞**（395,233 人次）與 **新加坡**（388,078 人次）展現出極為穩定且高質量的客源結構。馬來西亞旅客對台灣的穆斯林友善環境與多元文化景點接受度高；新加坡旅客則偏好深度自由行、美食探索與精緻旅遊，對整體觀光產值貢獻顯著。此外，**印尼**市場亦貢獻了 **264,993 人次**，展現穩固的基底。
+                </p>
+
+                <h3>3. 其他東協市場發展與未來展望</h3>
+                <p>
+                    其餘東協國家如緬甸（20,855 人次）、柬埔寨（11,250 人次）、寮國（967 人次）及汶萊（2,385 人次）亦在區域航網的串聯下維持基本客源。
+                </p>
+                <p>
+                    綜觀全年數據，新
