@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>114/10-115/9 新南向東協10國來台旅客統計與分析報告</title>
+    <!-- Highcharts 核心與模組 -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+            background: var(--highcharts-background-color, #f9fafb);
+            color: var(--highcharts-neutral-color-100, #1f2937);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container-wrapper {
+            max-width: 950px;
+            margin: 2em auto;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            padding: 30px;
+        }
+
+        .highcharts-figure {
+            margin: 0 auto 2em auto;
+        }
+
+        .highcharts-description {
+            background: light-dark(#f2f6f2, #323232);
+            border-radius: 0 6px 6px 0;
+            border-left: 4px solid light-dark(#1d6aff, #60a5fa);
+            font-size: 0.9rem;
+            font-style: italic;
+            padding: 12px 18px;
+            margin: 2em 0 1em 0;
+            color: light-dark(#4b5563, #d1d5db);
+        }
+
+        /* 分析文稿樣式 */
+        .analysis-section {
+            margin-top: 30px;
+            padding-top: 25px;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .analysis-section h2 {
+            font-size: 1.4rem;
+            color: #1e3a8a;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .analysis-section h3 {
+            font-size: 1.1rem;
+            color: #374151;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .analysis-section p {
+            margin-bottom: 12px;
+            color: #4b5563;
+            text-align: justify;
+        }
+
+        .analysis-section ul {
+            margin: 0 0 15px 20px;
+            color: #4b5563;
+        }
+
+        .analysis-section li {
+            margin-bottom: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-wrapper">
+        <figure class="highcharts-figure">
+            <div id="container" style="min-width: 310px; height: 520px; margin: 0 auto"></div>
+            <p class="highcharts-description">
+                本圖表呈現 114年10月 至 115年9月（西元 2025年10月 - 2026年9月）新南向東協 10 國來台旅客按國籍別統計數據。
+                透過橫向長條圖可以清晰比較各國訪台旅次規模與排行，精準掌握東協各市場在台灣入境觀光版圖中的實質貢獻。
+            </p>
+        </figure>
+
+        <div class="analysis-section">
+            <h2>📊 114/10-115/9 新南向東協10國來台旅客市場結構與趨勢分析報告</h2>
+            <p>
+                根據交通部觀光署最新統計數據，自 114 年 10 月至 115 年 9 月（西元 2025 年 10 月至 2026 年 9 月）整年度期間，新南向政策目標之東協十國來台旅客總數達到 2,698,569 人次。在區域經貿交流深化、航班復甦及觀光推廣雙向並進下，東協市場已確立為支撐台灣國際觀光客源的關鍵支柱。
+            </p>
+
+            <h3>1. 菲律賓躍居東協訪台之首，越南與泰國緊追在後</h3>
+            <p>
+                在個別國家表現方面，菲律賓以 741,033 人次 居東協十國之冠，顯示商務差旅、移工探親及旅遊團體的強勁需求；越南（465,626 人次）與 泰國（408,149 人次）分居二、三名。越南受惠於經貿鏈結與團體旅遊復甦，表現亮眼；泰國則在持續推動的免簽政策與自由行風潮帶動下，維持極高的市場熱度。
+            </p>
+
+            <h3>2. 馬來西亞與新加坡展現高消費力與穩定客源</h3>
+            <p>
+                馬來西亞（395,233 人次）與 新加坡（388,078 人次）展現出極為穩定且高質量的客源結構。馬來西亞旅客對台灣的穆斯林友善環境與多元文化景點接受度高；新加坡旅客則偏好深度自由行、美食探索與精緻旅遊，對整體觀光產值貢獻顯著。此外，印尼市場亦貢獻了 264,993 人次，展現穩固的基底。
+            </p>
+
+            <h3>3. 其他東協市場發展與未來展望</h3>
+            <p>
+                其餘東協國家如緬甸（20,855 人次）、柬埔寨（11,250 人次）、寮國（967 人次）及汶萊（2,385 人次）亦在區域航網的串聯下維持基本客源。
+            </p>
+            <p>
+                綜觀全年數據，新南向東協市場展現出強韌的成長動能。未來在觀光行銷策略上，建議可針對不同國家的客群特性進行差異化佈局——例如針對菲、越、泰持續深化大眾觀光與網紅行銷，並針對馬、印持續優化穆斯林友善認證與接待環境，進一步拉升旅客在台停留天數與重遊率。
+            </p>
+        </div>
+    </div>
+
+    <script>
+        Highcharts.chart('container', {
+            chart: {
+                type: 'bar'
+            },
+            title: {
+                text: '114/10 - 115/9 新南向東協10國來台旅客按國籍統計'
+            },
+            subtitle: {
+                text: '統計期間：西元 2025年10月 - 2026年9月 (資料來源：交通部觀光署)'
+            },
+            xAxis: {
+                categories: [
+                    '菲律賓 (Philippines)',
+                    '越南 (Vietnam)',
+                    '泰國 (Thailand)',
+                    '馬來西亞 (Malaysia)',
+                    '新加坡 (Singapore)',
+                    '印尼 (Indonesia)',
+                    '緬甸 (Myanmar)',
+                    '柬埔寨 (Cambodia)',
+                    '汶萊 (Brunei)',
+                    '寮國 (Laos)'
+                ],
+                title: {
+                    text: null
+                },
+                gridLineWidth: 1,
+                lineWidth: 0
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: '入境人次 (Persons)',
+                    align: 'high'
+                },
+                labels: {
+                    overflow: 'justify'
+                }
+            },
+            tooltip: {
+                valueSuffix: ' 人次'
+            },
+            plotOptions: {
+                bar: {
+                    borderRadius: '50%',
+                    dataLabels: {
+                        enabled: true,
+                        format: '{y:,.0f}'
+                    },
+                    groupPadding: 0.1
+                }
+            },
+            legend: {
+                enabled: false
+            },
+            credits: {
+                enabled: false
+            },
+            series: [{
+                name: '入境人數',
+                data: [
+                    741033, // 菲律賓
+                    465626, // 越南
+                    408149, // 泰國
+                    395233, // 馬來西亞
+                    388078, // 新加坡
+                    264993, // 印尼
+                    20855,  // 緬甸
+                    11250,  // 柬埔寨
+                    2385,   // 汶萊
+                    967     // 寮國
+                ],
+                colorByPoint: true,
+                colors: [
+                    '#014CE5', '#2563eb', '#3b82f6', '#60a5fa', '#34d399',
+                    '#10b981', '#f59e0b', '#fbbf24', '#f43f5e', '#fb7185'
+                ]
+            }]
+        });
+    </script>
+
+</body>
+
+</html>
